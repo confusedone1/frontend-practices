@@ -15,14 +15,14 @@ body {
 
 
 @font-face {
-	src: url(Accessories/Lumiare.otf);
+	src: url(/Accessories/Lumiare.otf);
 	font-family: lumiare;
 	font-weight: normal;
 
 }
 @font-face {
 	font-family: secondary;
-	src: url(Accessories/DharmaGothicE_Bold_R.otf);
+	src: url(/Accessories/DharmaGothicE_Bold_R.otf);
 }
 
 .card {
