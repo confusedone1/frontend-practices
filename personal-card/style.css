@@ -20,16 +20,11 @@ body {
 	font-weight: normal;
 
 }
-@font-face {
-	font-family: secondary;
-	src: url(../Accessories/DharmaGothicE_Bold_R.otf);
-}
 
 .card {
 	justify-items: center;
 	width: auto;
 	text-align: center;
-	font-family: secondary;
 	background-color: #2a2a40;
 	padding: 80px 110px;
 	border-radius: 30px;
