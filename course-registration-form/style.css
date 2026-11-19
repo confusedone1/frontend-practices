@@ -1,0 +1,258 @@
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0px;
+	background-color: #fff4f4;
+}
+@font-face{
+	src: url(file:///D:/Documents2/Coding/Assets/framd.ttf);
+	font-family: frank;
+}
+
+
+
+
+
+.form-body{
+	background-color: white;
+	width: auto;
+	align-items: center;
+	padding: 30px 100px;
+	border-radius: 15px;
+	border: 3px solid #ce2d45;
+	box-shadow: 34px 34px 0px 0px #edbdbd4d;
+	transform: translate(-10px, -10px);
+	transition: all 0.5s ease;
+}
+.form-body:hover, .form-body:focus-within{
+	transform: none;
+	box-shadow: 14px 14px 0px 0px #edbdbd99;
+}
+
+
+
+
+
+.signup-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: auto;
+	gap: 18px;
+}
+.signup-form h2{
+	font-family: frank;
+	font-size: 34px;
+	letter-spacing: 0.08rem;
+	margin-top: 0px;
+	color: black;
+	border-bottom: 3px solid #CE2D45;
+	padding-bottom: 3px;
+	border-radius: 15%;
+}
+
+
+
+
+
+.label{
+	font-family: frank;
+	font-size: 21px;
+}
+.fields{
+	border: 2px solid #ce2d4566;
+	outline: none;
+	padding: 12px;
+	border-radius: 30px;
+	width: 300px;
+	font-family: system-ui;
+	font-weight: 500;
+	font-size: 15px;
+	transition: all 0.25s ease;
+}
+.fields:focus, .fields:hover{
+	border-color: #ce2d45;
+}
+
+.input-box{
+	display: flex;
+	width: 80%;
+}
+.label-trans{
+	font-family: frank;
+	font-size: 18px;
+	padding: 0 5px 0;
+	position: absolute;
+	transform: translate(15px, 14px);
+	cursor: text;
+    transition: all 0.25s ease;
+    width: fit-content;
+    color: #000000CC;
+}
+.fields:focus + .label-trans, .fields:not(:placeholder-shown) + .label-trans, .fields:not(:placeholder-shown):not(:focus) + .label-trans{
+	color: #ce2d45;
+	font-size: 16px;
+	background-color: white;
+	border-radius: 20px;
+	transform: translate(10px, -8px);
+}
+.fields:not(:placeholder-shown):not(:focus) + .label-trans, .fields:not(:placeholder-shown):not(:focus){
+	color: #ce2d45;
+}
+.fields:not(:placeholder-shown):not(:focus){
+	color: black;
+	border-color: #ce2d45;
+}
+
+
+
+
+
+button{
+	margin-top: 10px;
+	border: 2px solid #ce2d45;
+	border-radius: 30px;
+	background-color: white;
+	font-family: frank;
+	font-size: 21px;
+	padding: 6px 25px;
+	cursor: pointer;
+	box-shadow: 6px 8px 0 0 #edbdbd80;
+	outline: none;
+	transition: all 0.1s ease;
+
+}
+button:hover, button:active, button:focus{
+	transform: translateY(4px);
+	background-color: #edbdbd1a;
+	box-shadow: 3px 4px 0 0 #edbdbdb3;
+}
+
+
+
+
+.options{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+.dropdown{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	gap: 10px;
+}
+.dropdown label{
+	margin-bottom: 10px;
+}
+.dropdown select{
+	border: 2px solid #ce2d45;
+	border-radius: 30px;
+	padding: 6px 12px;
+	font-size: 16px;
+	width: 60%;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+.dropdown select:focus, .dropdown select:hover{
+	outline: none;
+	width: 70%;
+	padding-left: 10%;
+}
+
+
+
+.crs-level{
+	display: flex;
+	gap: 14px;
+}
+.crs-level input{
+	accent-color: #ce2d45;
+	cursor: pointer;
+	width: 15px;
+	aspect-ratio: 1/1;
+	margin: 0px;
+	transition: all 0.25s ease;
+}
+.crs-level input:focus, .crs-level input:hover{
+	outline: none;
+	width: 18px;
+}
+.crs-level label{
+	cursor: pointer;
+	font-family: system-ui;
+	font-weight: 500;
+}
+.crs-level span{
+	display: flex;
+	gap: 3px;
+	align-items: center;
+}
+
+
+
+.crtf{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 5px;
+}
+.crtf input{
+	accent-color: #ce2d45;
+	cursor: pointer;
+	width: 15px;
+	aspect-ratio: 1/1;
+	margin: 0px;
+	transition: all 0.25s ease;
+}
+.crtf input:hover, .crtf input:focus{
+	outline: none;
+	width: 18px;
+}
+.crtf label{
+	cursor: pointer;
+	font-family: system-ui;
+	font-weight: 500;
+}
+.crtopt{
+	display: flex;
+	align-items: center;
+	gap: 3px;
+}
+.radio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	aspect-ratio: 1/1;
+}
+
+
+
+
+
+.addinfo{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+.txtarea{
+	border: 2px solid #ce2d4566;
+	border-radius: 20px;
+	width: 280px;
+	padding: 5px 10px;
+	font-family: frank;
+	font-size: 17px;
+}
+.txtarea:focus, .txtarea:not(:placeholder-shown), .txtarea:not(:placeholder-shown):not(:focus){
+	outline: none;
+	border-color: #ce2d45;
+}
+.txtarea::placeholder{
+	color: #000000b3;
+}
