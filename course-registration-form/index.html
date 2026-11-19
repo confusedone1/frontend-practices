@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+  <title>Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-body">
+    <form class="signup-form">
+      <h2 class="heading">Course Registration</h2>
+
+        <label class="label">Personal Information</label>
+        <div class="input-box">
+          <input type="text" id="fname" placeholder=" " class="fields">
+          <label for="fname" class="label-trans">First Name</label>
+        </div>
+        <div class="input-box">
+          <input type="text" id="lname" placeholder=" " class="fields">
+          <label for="lname" class="label-trans">Last Name</label>
+        </div>
+
+        <div class="input-box">
+          <input type="text" id="phone" placeholder=" " class="fields">
+          <label for="phone" class="label-trans">Phone Number</label>
+        </div>
+        <div class="input-box">
+          <input type="email" id="email" placeholder=" " class="fields">
+          <label for="email" class="label-trans">Email</label>
+        </div>
+
+        <div class="options">
+          <div class="dropdown">
+            <label class="label">Choose your new course</label>
+            <select id="crs-select">
+              <optgroup label="Front-End">
+                <option value="html-course">HTML</option>
+                <option value="css-course">CSS</option>
+                <option value="javascript-course">Java Script</option>
+              </optgroup>
+              <optgroup label="Back-End">
+                <option value="php-course">PHP</option>
+                <option value="nodejs-course">Node.js</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <span class="crs-level">
+            <span>
+              <input type="checkbox" checked id="basic">
+              <label for="basic">Basic</label>
+            </span>
+            <span>
+              <input type="checkbox" id="inter">
+              <label for="inter">Intermediate</label>
+            </span>
+            <span>
+              <input type="checkbox" id="adv">
+              <label for="adv">Advanced</label>
+            </span>
+          </span>
+
+          <span class="crtf">
+            <span class="crtopt">
+              <span class="radio"><input type="radio" checked id="wcert" name="certif"></span>
+              <label for="certif">With certificate</label>
+            </span>
+            <span class="crtopt">
+              <span class="radio"><input type="radio" id="nocert" name="certif"></span>
+              <label for="nocert">Without certificate</label>
+            </span>
+          </span>
+        </div>
+
+        <div class="addinfo">
+          <textarea placeholder="Additional Information" rows="5" id="addinfo" class="fields txtarea"></textarea>
+        </div>
+
+      <span><button class="submit">Next</button></span>
+
+    </form>
+  </div>
+
+</body>
+</html>
